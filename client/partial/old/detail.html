@@ -1,0 +1,12 @@
+
+<div ng-model="products"  ng-controller="detailcontrol" >
+<h1> {{products[whichItem].Name}}  </h1>
+<div class="info">
+  <h3>Description of the products: {{products[whichItem].Description}} </h3>
+  <h3>Price of the item: {{products[whichItem].Price | currency}} </h3>
+
+</div>
+
+<a href="find.php">&laquo; Back to Search</a>
+<script src="js/controllers.js"></script>
+</div>

@@ -1,0 +1,11 @@
+<section >
+<div ng-model="results"  ng-controller="detailscontrol">
+<h1> {{results[whichItem].Name}}  </h1>
+<div class="info">
+  <h3>Description of the products: {{results[whichItem].Description}} </h3>
+  <h3>Price of the item: {{results[whichItem].Price | currency}} </h3>
+
+</div>
+</div>
+<a href="find.php">&laquo; Back to Search</a>
+</section>

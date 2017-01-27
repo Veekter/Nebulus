@@ -1,0 +1,279 @@
+html, body{
+	border: 0;
+	padding: 0;
+	height: 100%;
+	max-width: 100%;
+	margin: auto;
+
+}
+body{
+	font: 20px "Montserrat", sans-serif;
+    line-height: 1.8;
+    color: #000;
+	height: 100%;
+	position: absolute;
+	/*background-image: url('../img/spiral.jpg'); */
+}
+
+.test{
+position: fixed;
+
+}
+.cap1{
+text-align: center;
+text-decoration:none;
+text-transform: uppercase;
+letter-spacing: 3px;
+font-family: "Comic Sans MS", cursive, sans-serif;
+ font-size: 40px;
+
+}
+.cap2{
+text-align: justify;
+letter-spacing: 3px;
+word-spacing: 10px;
+ font-size: 20px;
+
+}
+
+p{  
+font-size: 16px;
+
+}
+.carousel .item {
+    width: 100%; /*slider width*/
+    max-height: 680px; /*slider height*/
+}
+.carousel .item img {
+    width: 100%; /*img width*/
+	max-height: 640px;
+}
+/*full width container*/
+@media (max-width: 767px) {
+    .block {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+}
+
+
+.margin {margin-bottom: 45px;}
+.container-fluid{
+ box-sizing: border-box;
+ padding: 0;
+ 
+}
+#controller{
+	width: 25px;
+	height: 25px;
+	border-color: white;
+
+
+}
+.affix {
+      top: 0;
+      width: 100%;
+      z-index: 9999 !important;
+	  }
+@media (min-width: 1200px) {
+  .affix {
+    width: 263px;
+  }         
+}	  
+ .affix + .container-fluid {
+      padding-top: 70px;
+  }
+  
+  .navbar {
+	background-color: #1E88E5; 
+	z-index: 999;
+    padding-top: 15px;
+    padding-bottom: 0;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+	line-height: 1.42857143 !important;
+}
+.navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+	}
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #1E88E5!important;
+    background-color: #fff !important;
+}
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+}
+.jumbotron {
+    background-color: #1E88E5; /* blue */
+    color: #ffffff;
+	 padding: 100px 25px;
+}
+.bg-grey {
+    background-color: #1E88E5;
+}
+.container-fluid1{
+ padding: 10px 10px;
+height: 500px;
+ box-sizing: border-box;
+}
+.logo-small {
+    color: #1E88E5;
+    font-size: 50px;
+}
+.logo {
+    font-size: 200px;
+}
+@media screen and (max-width: 768px) {
+    .col-sm-4 {
+        text-align: center;
+        margin: 25px 0;
+    }
+}
+.imager{
+width: 200px;
+height: 300px;
+left: 120px;
+position : relative;
+   
+
+}
+.signup{
+background-color: grey;
+background-image: url("img/spiral.jpg");
+}
+   .button {
+  border-radius: 4px;
+  background-color: #1E88E5;
+  border-style: solid;
+  border-color: #1E88E5;
+  color: #FFFFFF;
+   -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  height: auto;
+  transition: all 0.5s;
+  cursor: pointer;
+  overflow: hidden;
+  margin: 5px;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+	.button:hover{
+		color: #1E88E5;
+		background-color: #FFFFFF;
+		border-style: solid;
+		border-color: #1E88E5;
+	}
+.button span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+	.button:hover span {
+  padding-right: 25px;
+  
+  
+}
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.shake{
+-webkit-animation-name: shake; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    animation-name: shake;
+    animation-duration: 2s;
+	animation-iteration-count: infinite;
+
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes shake {
+	-webkit-transform: rotateZ(90deg); /* Safari */
+    
+}
+
+/* Standard syntax */
+@keyframes shake {
+	/*transform: rotateZ(90deg);  *//* Standard syntax */
+	/*0% {transform: rotateZ(0deg);} */
+    from {transform: rotateZ(360deg); 
+	0% { transform: scale3d(2,-2,2);
+}
+
+} }
+
+
+
+.panel {
+    border: 1px solid #1E88E5;
+    border-radius:0;
+    transition: box-shadow 0.5s;
+}
+
+.panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+}
+
+.panel-footer .btn:hover {
+    border: 1px solid #1E88E5;
+    background-color: #fff !important;
+    color: green;
+}
+
+.panel-heading {
+    color: #fff !important;
+    background-color:#1E88E5 !important;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.panel-footer {
+    background-color: #fff !important;
+}
+
+.panel-footer h3 {
+    font-size: 32px;
+}
+
+.panel-footer h4 {
+    color: #aaa;
+    font-size: 14px;
+}
+
+.panel-footer .btn {
+    margin: 15px 0;
+    background-color: #1E88E5;
+    color: #fff;
+}
+.centre{
+text-align: center;
+}
+footer{
+ background-color: #990099;
+
+}
+footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #1E88E5;
+	top: 15px;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> Client login  </title>
+<meta charset="utf-8">
+<meta name= "viewport" content= "width= device-width, initial-scale= 1">
+<link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+<link rel="stylesheet" href="css/animate.css">
+<script src = "js/angular.js"> </script>
+<script src = "js/boostrap.js"> </script>
+<script src = "js/jquery.js"> </script>
+<script src = "js/clientlog.js"> </script>
+</head>
+<body>
+<div id= "container">
+
+<h1 class = "jumbotron">  Hello World! </h1>
+<div>
+<form id = "userreg" name = "myForm" ng-app = "ClientLogin" ng-controller= "ClientController" autocomplete = "on" method= "POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+<label> First name:</label> <input type= "text" ng-model = "firstName" placeholder = "Firstname" required maxlength ="20"> </br>
+<label> Last name: </label> <input type= "text" ng-model = "lastName" placeholder = "Lastname" required maxlength = "20"> </br>
+<label> User name:</label> <input type= "text" ng-model = "userName" placeholder = "username" required maxlength ="20"> </br>
+<label> Password:</label> <input type= "password" ng-model = "password" placeholder = "password" required maxlength ="20"> </br>
+<label> E-mail:</label> &nbsp&nbsp &nbsp&nbsp  <input type= "email" ng-model = "email" name = "myAddress" placeholder = "your e-mail" required autocomplete = "off"></br> 
+<span ng-show="myForm.myAddress.$error.email">Not a valid e-mail address</span> <p id = "demo">  </p>
+<label> Age: </label> <input type = "number" ng-model = "age" placeholder = "your age" name= "myage" min= "1" max= "100">
+<span ng-show= "myForm.myage.$error.number"> Please enter a number na uache upuzi!! </span> 
+<p> welcome {{ firstName}} {{ lastName }} </p>
+
+
+
+
+
+
+
+</form>
+
+ </div>
+
+
+
+</div>
+</body>
+</html>

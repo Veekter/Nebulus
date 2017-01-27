@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> Product Search   </title>
+<meta charset="utf-8">
+<meta name= "viewport" content= "width= device-width, initial-scale= 1">
+<link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/mystyle.css">
+<script src = "js/jquery.js"> </script>
+<script src = "js/angular.js"> </script>
+<script src = "js/bootstrap.js"> </script>
+<script src="js/indexang.js"> </script>
+</head>
+
+<div class="container-fluid">
+<!-- carousel start -->
+     <div id="myCarousel" class="carousel slide" data-ride="carousel" > <!-- style= "width: 1349px; height: 680px; -->
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox" >
+    <div class="item active">
+      <img src="img/spiral.jpg" alt="Chania" class="back"></img>
+	  <div class="carousel-caption">
+        <h3 class="cap1 ">Innovative</h3>
+        <p class="cap2">A first of its kind.</p>
+		<button class="button"> <span> Join Us </span></button>
+      </div>
+	  </div>
+
+
+	<div class="item ">
+      <img src="img/laptop.jpg" alt="Chania" class="back">
+	  <div class="carousel-caption">
+        <h3 class="cap1">Userbility</h3>
+        <p class="cap2">We care about what our customers experience.</p>
+		<button class="button"><span> Join Us </span></button>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="img/flower.jpg" alt="Flower" class="back">
+	  <div class="carousel-caption">
+        <h3 class="cap1">Efficient</h3>
+        <p class="cap2">Carefully crafted to suite your needs.</p>
+		<button class="button"><span> Join Us </span></button>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="img/plate.jpg" alt="Flower" class="back">
+	  <div class="carousel-caption">
+        <h3 class="cap1">Revolutionary</h3>
+        <p class="cap2">We dream of being the best at what we do.</p>
+		<button class="button"><span> Join Us </span></button>
+      </div>
+    </div>
+	</div>
+
+
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+ <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<!-- carousel end-->
+
+<!-- navbar begin -->
+	 <nav id="navbar" class="navbar navbar-default scrollspy data-spy="affix" data-offset-top="600"">    <!--navbar-fixed-top   -->
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Nebulus</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+	    <li class="active"><a href="#">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Products</a></li>
+		<li><a href="#signup">Sign up</a></li>
+        <li><a href="#contact">Contact us</a></li>
+		<li><a href="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- navbar end  -->
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="600">
+<div class="container-fluid">
+	<div class="jumbotron text-center" data-center-top="opacity:0;"
+data-top-top="opacity:1;" >
+  <h1>Products</h1>
+  <p>We specialize in finding products that suite you.</p>
+	<form class="form-inline" name="myForm">
+    <input type="email"  id="email" ng-model="user.email" class="form-control" size="50" placeholder="Email Address">
+    <button type="button" class="btn btn-success">Subscribe</button>
+<!--	<div id="test"><div> -->
+  </form>
+</div>
+		<div id="about" class="container-fluid1">
+		<div class="row">
+			<div class="col-sm-8" data-top="padding-left[swing]:20px;"
+    data-500-top="padding-left[swing]:500px;">
+  <h2>About Company Page</h2>
+  <h4>About Us</h4>
+  <p>When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a few stray gleams steal into the inner sanctuary, I throw myself down among the tall grass by the trickling stream.</p>
+   <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine.
+   I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single stroke at the present moment;</p>
+  <button class="btn btn-default btn-lg">Get in Touch</button>
+</div>
+		<div class="col-sm-4" data-top="padding-top[swing]:20px;"   data-500-top="padding-top[swing]:400px;">
+      <span class="glyphicon glyphicon-signal logo">   </span>
+    </div>
+	</div>
+</div>
+
+<div id="about" class="container-fluid1 bg-grey">
+		 <div class="row">
+    <div class="col-sm-4" data-top="padding-top[swing]:20px;"   data-500-top="padding-top[swing]:400px;">
+      <span class="glyphicon glyphicon-globe logo"></span>
+    </div>
+    <div class="col-sm-8" data-top="padding-left[swing]:20px;"   data-500-top="padding-left[swing]:500px;">
+  <h2>Our Values</h2>
+  <h4><strong>MISSION:</strong> Products which suite you</h4>
+  <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine.
+   I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents..</p>
+   <button class="btn btn-default btn-lg">Get in Touch</button>
+</div>
+</div>
+</div>
+<!-- services div -->
+<div id="services" class="container-fluid1 text-center">
+  <h2>SERVICES</h2>
+  <h4>What we offer</h4>
+  <br>
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-off logo-small shake"></span>
+      <h4>POWER</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-heart logo-small shake"></span>
+      <h4>LOVE</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-lock logo-small shake"></span>
+      <h4>JOB DONE</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    </div>
+    <br><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-leaf logo-small shake"></span>
+      <h4>GREEN</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-certificate logo-small shake"></span>
+      <h4>CERTIFIED</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-wrench logo-small shake"></span>
+      <h4>HARD WORK</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+  </div>
+</div>
+<!-- sign up div -->
+<div id="signup" class="container-fluid">
+<div class="row">
+<div class="col-sm-6">
+ <h3>Sign up as a client of Nebulus</h3>
+<img class="img-responsive imager" src="img/svg/people.svg"></img>
+<button class="button" data-toggle="modal" data-target="#clientreg" ><span>Register  </span>  </button>
+
+<!-- Client Register Modal -->
+<div id="clientreg" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Sign Up as a client of Nebulus</h4>
+      </div>
+      <div class="modal-body">
+	 <!--  Client reg form   -->
+	 <form role="form" method="POST" action="register.php">
+	<div class="form-group">
+      <label for="Firstanme">Firstname:</label>
+      <input type="text" class="form-control" id="fname" name="fname" placeholder="Enter your first name">
+    </div>
+	<div class="form-group">
+      <label for="Lastname">Lastname:</label>
+      <input type="text" class="form-control" id="lname" name="lname" placeholder="Enter your last name">
+    </div>
+
+	<span class="help-block">Pick your gender:</span>
+	<label class="radio-inline"><input type="radio" name="optradio">Male</label>
+    <label class="radio-inline"><input type="radio" name="optradio">Female</label>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" name="email" placeholder="Enter email">
+    </div>
+	<div class="form-group">
+      <label for="Username">Username:</label>
+      <input type="text" class="form-control" id="uname" name="username" placeholder="Enter your username">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password">
+    </div>
+      </div>
+      <div class="modal-footer">
+		<button type="submit" class="btn btn-default">Submit</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+	   </form>
+  <!-- End of client reg form -->
+    </div>
+
+  </div>
+</div>
+<!-- End of Client Register Modal -->
+
+<button class="button" data-toggle="modal" data-target="#clientlog" ><span>Log in  </span>   </button>
+
+<!-- Client Login Modal -->
+<div id="clientlog" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Login as a Client of Nebulus</h4>
+      </div>
+      <div class="modal-body">
+        <form role="form" method="POST" action="client/clientlog.php">
+		<div class="form-group">
+      <label for="Username">Username:</label>
+      <input type="text" class="form-control" id="uname" name="username" placeholder="Enter your username">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password">
+    </div>
+      </div>
+      <div class="modal-footer">
+		<button type="submit" class="btn btn-default">Submit</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+	  </form>
+    </div>
+
+  </div>
+</div>
+<!-- End of Client  Login Modal -->
+
+	</div>
+<div class="col-sm-6">
+	 <h3>Sign up as a merchant of Nebulus</h3>
+<img class="img-responsive imager" src="img/svg/avatar.svg"></img>
+<button class="button" data-toggle="modal"  data-target="#merchreg"> <span> Register </span>  </button>
+
+<!-- Merchant Register Modal -->
+<div id="merchreg" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Sign Up as a Merchant of Nebulus</h4>
+      </div>
+      <div class="modal-body">
+	  <!-- Merchant registration form -->
+	  <form role="form" action="merchant/merchreg.php" method="POST">
+	<div class="form-group">
+      <label for="Companyname">Company Name:</label>
+      <input type="text" class="form-control" id="coname" name="coname" placeholder="Enter your Company name">
+    </div>
+	<div class="form-group">
+      <label for="Website">Website:</label>
+      <input type="url" class="form-control" id="url" name="url" placeholder="Enter your website">
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" name="email" placeholder="Enter email">
+    </div>
+	<div class="form-group">
+      <label for="Username">Username:</label>
+      <input type="text" class="form-control" id="muname" name="muname" placeholder="Enter your username">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" name="mpassword" placeholder="Enter password">
+    </div>
+	<div class="form-group">
+      <label for="Location">Your Company's Location:</label>
+      <input type="text" class="form-control" id="colcation" name="colocation" placeholder="Enter your Company's Location">
+    </div>
+      </div>
+      <div class="modal-footer">
+	    <button type="submit" class="btn btn-default">Submit</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+	  </form>
+    </div>
+<!-- End of Merchant registration form -->
+  </div>
+</div>
+<!-- End of Merchant Register Modal -->
+
+<button class="button" data-toggle="modal"  data-target="#merchlog"><span> Log in </span>   </button>
+
+<!-- Merchant Login Modal -->
+<div id="merchlog" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Login as a Merchant of Nebulus</h4>
+      </div>
+      <div class="modal-body">
+         <form role="form" method="POST" action="merchant/merchlog.php">
+		<div class="form-group">
+      <label for="Username">Username:</label>
+      <input type="text" class="form-control" id="uname" name="username" placeholder="Enter your username">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password">
+    </div>
+      </div>
+      <div class="modal-footer">
+		<button type="submit" class="btn btn-default">Submit</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+	  </form>
+    </div>
+  </div>
+</div>
+<!-- End of Merchant Login Modal -->
+
+</div>
+</div>
+
+<!-- signup end-->
+<!-- pricing div -->
+<div class="container-fluid">
+  <div class="text-center">
+    <h2>Pricing</h2>
+    <h4>Choose a payment plan that works for you</h4>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Basic</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>20</strong> Every</p>
+          <p><strong>15</strong> body</p>
+          <p><strong>5</strong> got</p>
+          <p><strong>2</strong> choices </p>
+          <p><strong>Endless</strong> Amet</p>
+        </div>
+        <div class="panel-footer">
+          <h3>$19</h3>
+          <h4>per month</h4>
+          <button class="btn btn-lg">Sign Up</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Pro</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>50</strong> Lorem</p>
+          <p><strong>25</strong> Ipsum</p>
+          <p><strong>10</strong> Dolor</p>
+          <p><strong>5</strong> Sit</p>
+          <p><strong>Endless</strong> Amet</p>
+        </div>
+        <div class="panel-footer">
+          <h3>$29</h3>
+          <h4>per month</h4>
+          <button class="btn btn-lg">Sign Up</button>
+        </div>
+      </div>
+    </div>
+   <div class="col-sm-4">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Premium</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>100</strong> Lorem</p>
+          <p><strong>50</strong> Ipsum</p>
+          <p><strong>25</strong> Dolor</p>
+          <p><strong>10</strong> Sit</p>
+          <p><strong>Endless</strong> Amet</p>
+        </div>
+        <div class="panel-footer">
+          <h3>$49</h3>
+          <h4>per month</h4>
+          <button class="btn btn-lg">Sign Up</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- contact form -->
+ <div id="contact" class="container-fluid1 bg-grey" data-center-top="opacity:0; left:-200%;"
+data-top-top="opacity:1;   left:0%;">
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Nairobi, KE</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
+    </div>
+    <div class="col-sm-7">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control input-lg" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control input-lg" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right btn-lg" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+	<footer class="container-fluid1 bg-4 text-center">
+	<div class ="row">
+		<div class="col-sm-6">
+		<h2> Bread<small>Crumbs</small></h2>
+	    <ul class="nav nav-pills nav-stacked">
+			<li class="active"><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+			<li><a href="#">Products</a></li>
+			<li><a href="#">Contacts</a></li>
+	    </ul>
+		<p> <a href="#" title="Header" data-toggle="popover" data-trigger="hover" data-content="wanna know more visit the other pages">Hover over me</a></P>
+	    </div>
+				<div class="col-sm-6">
+		<a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>Site by Muriithi Corp <a href="http://www.w3schools.com" title="Visit Victor's site">www.vicproducts.com</a></p>
+	 </div>
+	 </div>
+	</footer>
+</div>
+</div>
+</div>
+</div>
+<!-- main div end -->
+
+
+<script>
+$(document).ready(function(){
+  // Add scrollspy to <body>
+  $('body').scrollspy({target: ".navbar", offset: 50});
+
+  // Add smooth scrolling on all links inside the navbar
+  $("#myNavbar a").on('click', function(event) {
+
+    // Prevent default anchor click behavior
+    event.preventDefault();
+
+    // Store hash
+    var hash = this.hash;
+
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 800, function(){
+
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+    });
+  });
+});
+
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();
+});
+</script>
+
+
+<script src = "js/skrollr.min.js"> </script>
+<script src= "js/TweenMax.min.js"> </script>
+<script src="js/main.js"> </script>
+<script>
+      var s = skrollr.init();
+</script>
+</body>
+</html>

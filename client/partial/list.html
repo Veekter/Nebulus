@@ -1,0 +1,47 @@
+
+  <div class="search" ng-controller="searchcontrol">
+<div class="jumbotron"><h1> View products from our catalog</h1></div>
+<form role="form">
+  <div class="form-group">
+    <input type="text" class="form-control" ng-model="query" name="search" placeholder="What are you looking for?">
+    <button type="button" class="btn btn-default" name="button"> search </button>
+  </div>
+<label class="form-group">Order By:
+  <select ng-model="myOrder">
+    <option value="Name" selected>Name</option>
+    <option value="Category">Category</option>
+    <option value="Price">Price</option>
+  </select>
+</label>
+<label class="form-group">
+<input type="radio" ng-model="direction" name="direction" checked> Ascending
+</label>
+<label class="form-group">
+<input type="radio" ng-model="direction" name="direction" value="reverse"> Descending
+</label>
+</form>
+<!-- end of the form-->
+<!--<a href="#my-page">Close the menu</a>  -->
+  <div class="table-responsive" >
+ <table class="table">
+   <tr>
+     <th> Name</th>
+     <th>Category</th>
+     <th> Description</th>
+     <th> price</th>
+     <th> Website</th>
+   </tr>
+   <tr ng-repeat="x in products | filter:query | orderBy:myOrder:direction">
+
+    <td><a style=" color: black" href="#/details/{{products.indexOf(x)}}"> {{ x.Name }} </a></td>
+    <td><a style=" color: black" href="#/details/{{products.indexOf(x)}}">  {{ x.Category }} </a></td>
+    <td><a style=" color: black" href="#/details/{products.indexOf(x)}}">  {{ x.Description }} </a></td>
+    <td><a style=" color: black" href="#/details/{{products.indexOf(x)}}">  {{ x.Price |currency }} </a></td>
+    <td>{{ x.Website }}</td>
+  </a>
+  </tr>
+ </table>
+</div>
+
+
+    </div>
